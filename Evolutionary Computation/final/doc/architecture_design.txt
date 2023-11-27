@@ -1,0 +1,34 @@
+### Core Components:
+
+TSP Class: Central class that represents the TSP problem. It extracts city coordinates from tsp file and contains distance calculation method.
+
+Individual Class: Represents a tour, storing a permutation of cities and its fitness value.
+
+Population Class: Manages a group of individuals, including initialization.
+
+GeneticAlgorithm Class: Orchestrates the evolutionary process, including selection methods,crossover and mutation operators. 
+
+
+### Modularity:
+
+Crossover Operators: Implement various crossover operators like Order Crossover, PMX, Cycle Crossover as separate file crossover.py and can be selected in the class GeneticAlgorithm.
+
+Mutation Operators: Implement various mutation operators like Swap, Insert, Inversion as separate file mutation.py and can be selected in the class GeneticAlgorithm.
+
+Selection Methods: Allow for different selection methods like Roulette Wheel, Tournament, each implemented in a seperate file selection.py.
+
+Maintain clear and comprehensive documentation for each module, class, and method.
+
+
+### Task splitting:
+
+We split tasks into smaller task and create a file for each task: initialisation.py (generate and load initial population for each Population size and each Repetition), run_algorithms.py (run our three custom algorithms and the Inver-Over algorithm from the research paper) and diagram.py (create diagrams for the results).
+
+
+### Testing:
+
+Unit Testing: We implement extensive unit tests for individual components, focusing on various crossover operators, mutation methods, and selection algorithms. This approach allows us to thoroughly examine the correctness of each module in isolation.
+
+Scalability Testing: To evaluate the library's efficiency and scalability, we conduct tests on TSP instances of varying sizes, from small to large. This helps us identify potential bottlenecks and optimize our algorithms for real-world use cases.
+
+Performance Testing: We compare the performance of our algorithms with the Inver-Over algorithm from the research paper. We also compare the performance of our algorithms with the results from the research paper.

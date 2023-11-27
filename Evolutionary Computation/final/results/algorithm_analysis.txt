@@ -1,0 +1,33 @@
+Analysis
+Convergence speed
+---------------------------------------------------------
+All initially converge quite quick, smoothing out and steadily improving approaching 20000
+ALG 1 : Across all populations, initially converges faster. Higher populations less obvious.
+Fitness proportional selection is biased towards best individuals which leads to rapid gain but premature convergence and loss of diversity. 
+ALG 2 : Always slightly worse fitness than ALG3, but better than all 1.
+Tournament selection generally maintains pop diversity better than FPS, more consistent throughout reps than ALG1
+ALG 3 : Best convergence speed.
+Combination of factors lead to speed similar to ALG2, but converges slightly faster
+
+Convergence smoothness
+---------------------------------------------------------
+Generally all algorithms have better convergence smoothness on higher pop sizes
+ALG 1 : Jumps around a lot, occasionally has long periods of no fitness gain and sometimes has large fitness gain suddenly
+FPS can lead to domination of a few high fitness individuals which can lead to a loss of diversity / periods of stagnation. See POP20 Rep 10 to see flatline.
+ALG 2 : Generally smooth and consistent, rarely has large jumps in fitness but steadily increases
+You see jumps in fitness in POP50 Rep 13, but generally not in other samples
+ALG 3 : Has a smooth increase often throughout all population sizes
+ALG 2 and 3 maintains a better population diversity, facilitating consistent gains in fitness by not getting stuck on bad solutions
+
+Variability across repetitions
+---------------------------------------------------------
+ALG 1 : Has high variability, will sometimes be close to ALG 2 but often be far off
+Gets stuck on solutions, but also very exploratory so can be better in some cases. See POP20 Rep 4 where it is better than ALG 2 until Gen5000.
+ALG 2 : Fitness is relatively consistent, however is has a bigger range than ALG 3
+Bigger range because PMX and insert don't explore well all the time.
+ALG 3 : Very consistent end fitness on all population sizes
+Good combination of selection and seems to be reliable
+
+The algorithm you would choose and why
+---------------------------------------------------------
+ALG3 because it is the most consistent of the three. It explores well but does not get stuck on bad solutions

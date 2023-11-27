@@ -1,0 +1,21 @@
+50 words max about role of each member and contributions
+
+Lexuan Li
+·  Raw EA codes include parse TSP, generation Individual / Population, EA algorithm and evolve(), this code have lame evolutionary ability but can run. Also some documentation work especially architecture UML diagram.
+
+Xingcheng Li
+. run the inver-over algorithm follow the paper, draw the diagram and compare the result
+
+Quoc Dat Ngo
+·  Design and implement the genetic algorithms, operators, data structures, and the main function.
+·  Generate the initial population and diagrams.
+·  Run the algorithms and save the results to files + Debug.
+·  Edit the documentation. 
+
+Seth Ossowicz
+·  Edit initial code/fix formatting + combining multiple members code. Running reps for the evolution. Performed analysis on data and graphs. Assist in a few issues.
+
+Yuyi Zhang
+
+Bowen Zhu
+.   Test the tsp algorithm, send the results to put together and write the first algorithm design.

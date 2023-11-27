@@ -1,0 +1,9 @@
+- Algorithm 1 combines Fitness-Proportional Selection, Order Crossover, and Swap Mutation. Fitness-Proportional Selection prioritizes fitter individuals. Order Crossover preserves city spatial order, and Swap Mutation adds exploration. This combination strives for balance in addressing TSP problems.
+
+- Algorithm 2 combines Tournament Selection, PMX Crossover, and Insert Mutation. Tournament Selection maintains diversity, while PMX balances exploration and exploitation by preserving tour structure. Insert Mutation allows controlled exploration.
+
+- Algorithm 3 combines Tournament Selection, Cycle Crossover, and Inversion Mutation. Tournament Selection ensures diverse parents. Cycle Crossover maintains city connectivity, and Inversion Mutation introduces variation. This configuration suits the TSP, handling its complexities effectively.
+
+- We opt for random initialization of populations to avoid bias and explore diverse solutions, increasing the chances of finding global optima in the TSP.
+
+- Elitism is used to preserve the best solutions across generations, preventing the loss of significant individuals and maintaining consistent progress toward optimal solutions in the TSP.
